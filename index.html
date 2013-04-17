@@ -5,12 +5,69 @@
 <meta name="description" content="Le site officiel du groupe Igit | Découvrez leur premier EP, sortie en mai 2013"/>
 <meta name="keywords" content="Igit, Antoine, Hugo, Paulo, musique, blues, indie, alternatif"/>
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+<script type="text/javascript">
+
+  function reach(id){
+  id=id||'';
+  var y=(id!='')?$('#'+id).offset().top:0;
+  $("html,body").animate({scrollTop:y},"slow",function(){window.location.hash=id});
+  return false;
+  }
+
+  function clickMenu(){
+  $('ul#menu li').removeClass('on');
+  $(this).parent().addClass('on');
+  return reach($(this).attr('href').substr(1));
+  }
+
+  $(document).ready(function(){
+  $('ul#menu li a').click(clickMenu);
+  $("ul#menu li a").each(function( index ) {
+  if(!window.location.hash)window.location.hash = $(this).attr('href');
+  if(window.location.hash==$(this).attr('href'))$(this).parent().addClass('on');
+  });
+
+  });
+
+</script>
 </head>
+<body>
+  <ul id="menu">
+    <li><a href="#accueil">YO!</a></li>
+    <li><a href="#groupe">IGIT...</a></li>
+    <li><a href="#histoire">Histoire</a></li>
+  </ul>
 
 
-<div id='allpage'>
-<div id='cover'>
-  <h2>my home</h2>
-</div>
-</div>
+  <div id="content">
+
+    <div class="section" id="accueil">
+      <div class="sectionContent">
+	<h1>YO!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare consectetur dapibus. Fusce commodo mauris eu velit porta nec viverra lectus elementum. Vestibulum feugiat dolor at ante molestie quis dictum nulla vestibulum. Phasellus sed nisl mauris, sed posuere nibh. Phasellus sapien felis, congue vitae pellentesque non, consequat ac nisl. Integer tincidunt feugiat justo, et suscipit enim semper at. Vestibulum pulvinar nibh velit. Integer ullamcorper tortor et mauris tincidunt et placerat lacus mattis. Donec mi odio, elementum ut fermentum pulvinar, ultrices vitae tortor. Integer at ligula magna. Proin nec justo eget nisl lobortis gravida. In ut magna euismod purus ultricies adipiscing in dapibus turpis.
+            </p>
+      </div>
+    </div>
+
+    <div class="section" id="groupe">
+      <div class="sectionContent">
+	<h1>IGIT...</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare consectetur dapibus. Fusce commodo mauris eu velit porta nec viverra lectus elementum. Vestibulum feugiat dolor at ante molestie quis dictum nulla vestibulum. Phasellus sed nisl mauris, sed posuere nibh. Phasellus sapien felis, congue vitae pellentesque non, consequat ac nisl. Integer tincidunt feugiat justo, et suscipit enim semper at. Vestibulum pulvinar nibh velit. Integer ullamcorper tortor et mauris tincidunt et placerat lacus mattis. Donec mi odio, elementum ut fermentum pulvinar, ultrices vitae tortor. Integer at ligula magna. Proin nec justo eget nisl lobortis gravida. In ut magna euismod purus ultricies adipiscing in dapibus turpis.
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="histoire">
+      <div class="sectionContent">
+        <h1>Histoire</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare consectetur dapibus. Fusce commodo mauris eu velit porta nec viverra lectus elementum. Vestibulum feugiat dolor at ante molestie quis dictum nulla vestibulum. Phasellus sed nisl mauris, sed posuere nibh. Phasellus sapien felis, congue vitae pellentesque non, consequat ac nisl. Integer tincidunt feugiat justo, et suscipit enim semper at. Vestibulum pulvinar nibh velit. Integer ullamcorper tortor et mauris tincidunt et placerat lacus mattis. Donec mi odio, elementum ut fermentum pulvinar, ultrices vitae tortor. Integer at ligula magna. Proin nec justo eget nisl lobortis gravida. In ut magna euismod purus ultricies adipiscing in dapibus turpis.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
