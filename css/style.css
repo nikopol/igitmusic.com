@@ -110,15 +110,42 @@
 
   }
 
-/* Socials */
-  #socials{
-      position: relative
+  #footer {
+      position:fixed;
+      left:0px;
+      z-index:10;
+      bottom:0px;
+      /* height:30px; */
+      width:100%;
+      padding-bottom:5px;
+      padding-left:10px;
   }
-  #socials a{display:block;
-             width: 30px;
-             height: 31px;
-             float:left;
-             opacity: 0.6;
-             margin-right: 3.8px; }
-  #socials a.last{margin-right: 0}
-  #socials a:hover{opacity: 1}
+
+
+
+/* Socials */
+  ul#social {
+      position: relative;
+      padding:0;
+  }
+
+  ul#social li{
+      display: block;
+      float:left;}
+
+
+  ul#social a {
+      display:block;
+      width: 30px;
+      height: 31px;
+      float:left;
+      opacity: 0.6;
+      margin-right: 3.8px;
+  }
+
+  ul#social a.last {
+      margin-right: 0
+  }
+  #social a:hover{
+      opacity: 1
+  }
