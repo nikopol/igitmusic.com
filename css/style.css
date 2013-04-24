@@ -68,21 +68,35 @@
       text-shadow: 0 0 3px #000;
   }
 
-  .section#accueil{
+  .section#home{
       color:#fff;
       background-image:url('../img/igit.jpg');
       background-repeat:no-repeat;
       background-size:cover;
   }
 
-  .section#groupe{
+  .section#tour{
       color:#fff;
       background-image:url('../img/band.jpg');
       background-repeat:no-repeat;
       background-size:cover;
   }
 
-  .section#histoire{
+  .section#music{
+      color:#fff;
+      background-image:url('../img/cover.png');
+      background-repeat:no-repeat;
+      background-size:cover;
+  }
+
+  .section#video{
+      color:#fff;
+      background-image:url('../img/cover.png');
+      background-repeat:no-repeat;
+      background-size:cover;
+  }
+
+  .section#pros{
       color:#fff;
       background-image:url('../img/cover.png');
       background-repeat:no-repeat;
@@ -95,3 +109,16 @@
       margin-right:auto;
 
   }
+
+/* Socials */
+  #socials{
+      position: relative
+  }
+  #socials a{display:block;
+             width: 30px;
+             height: 31px;
+             float:left;
+             opacity: 0.6;
+             margin-right: 3.8px; }
+  #socials a.last{margin-right: 0}
+  #socials a:hover{opacity: 1}
