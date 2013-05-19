@@ -1,3 +1,15 @@
+  @font-face {
+    font-family: 'sofia';
+    src: url('../webfont/sofia-regular-webfont.eot');
+    src: url('../webfont/sofia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/sofia-regular-webfont.woff') format('woff'),
+         url('../webfont/sofia-regular-webfont.ttf') format('truetype'),
+         url('../webfont/sofia-regular-webfont.svg#sofiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
   body{
       margin:0;
       padding:0;
@@ -8,22 +20,36 @@
   ul#menu{
       position: fixed;
       z-index:10;
-      margin:20px;
-      list-style:none;
       padding:0px;
-      border-radius:5px;
+      width:520px;
+      padding-left:100px;
+      padding-right:100px;
+      height:200px;
+      left:50%;;
+      margin-left:-350px;
+      top:0px;
+      background:url(../img/menu.png) center center no-repeat;
+      list-style:none;
+      font-family: sofia;
+      font-size:22px;
       overflow:hidden;
+      text-align:center;
   }
 
   ul#menu li{
       display: block;
       float:left;
-      width:50px;
+      width:80px;
       text-align: center;
-      padding:20px;
-      border-right:1px solid #000;
+      padding:0;
       margin:0;
-      background:#fff;
+      margin-top:72px;
+  }
+
+  ul#menu li.home{
+    width:190px;
+    height:190px;
+    margin-top:0px;
   }
 
   ul#menu li:last-child{
@@ -40,12 +66,12 @@
   }
 
   ul#menu li.on{
-      background:#000;
+
       color:#fff;
   }
 
   ul#menu li.on a{
-      color:#fff;
+      color:#d79060;
   }
 
   #content{
@@ -62,45 +88,63 @@
   }
 
   .section h1{
+      text-align: center;
       margin:0;
-      padding:120px 0 0 0;
-      color:#fff;
+      padding:190px 0 30px 0;
+      color:#ede8dc;
       text-shadow: 0 0 3px #000;
+      font-family: sofia;
   }
 
   .section#home{
       color:#fff;
-      background-image:url('../img/igit.jpg');
-      background-repeat:no-repeat;
-      background-size:cover;
+      background: #567959 url('../img/homeBg.png') 0 0 repeat;
   }
+
+
 
   .section#tour{
       color:#fff;
-      background-image:url('../img/band.jpg');
+      background:#000000;
+      /*background-image:url('../img/cover.png');
       background-repeat:no-repeat;
-      background-size:cover;
+      background-size:cover;*/
   }
 
   .section#music{
       color:#fff;
-      background-image:url('../img/cover.png');
-      background-repeat:no-repeat;
-      background-size:cover;
+      background:#d79060;
   }
 
   .section#video{
       color:#fff;
-      background-image:url('../img/cover.png');
-      background-repeat:no-repeat;
-      background-size:cover;
+      background-color:#333;
   }
 
   .section#pros{
-      color:#fff;
-      background-image:url('../img/cover.png');
-      background-repeat:no-repeat;
-      background-size:cover;
+      color:#000000;
+      background:#FFFFFF;
+  }
+
+  .section#pros h1 {
+      color:#000;
+  }
+
+  .section#pros a:link {
+      color:#47ad68;
+  }
+  .section#pros a:visited {
+      color:#f19151;
+  }
+
+  #pros-left {
+      width:50%;
+      float:left;
+  }
+
+  #pros-right {
+      float:left;
+      width:50%;
   }
 
   .sectionContent{
@@ -110,15 +154,19 @@
 
   }
 
+  .section#home .sectionContent, .section#video .sectionContent{
+    text-align: center;
+  }
+
   #footer {
       position:fixed;
       left:0px;
       z-index:10;
       bottom:0px;
       /* height:30px; */
+      background: #000 url(../img/footer.png) 0 0 repeat;
+      padding-top:5px;
       width:100%;
-      padding-bottom:5px;
-      padding-left:10px;
   }
 
 
@@ -126,12 +174,16 @@
 /* Socials */
   ul#social {
       position: relative;
+      text-align:center;
       padding:0;
+      margin:0;
+      width:100%;
+      list-style:none;
   }
 
   ul#social li{
-      display: block;
-      float:left;}
+      display:inline-block;
+  }
 
 
   ul#social a {
@@ -148,4 +200,30 @@
   }
   #social a:hover{
       opacity: 1
+  }
+
+
+  a.event{
+    display: block;
+    background:#f19151;
+    border:2px solid #e3dac4;
+    position:absolute;
+    width:170px;
+    padding: 20px;
+    height:170px;
+    font-size:20px;
+    text-align: center;
+    color:#fff;
+    font-family:sofia;
+    top:310px;
+    left:50%;
+    margin-left:170px;
+    border-radius:110px;
+    box-shadow: 0 0 5px #000;
+    text-decoration: none;
+  }
+
+  a.event:hover{
+    background:#e07f3d;
+    text-decoration: underline;
   }
