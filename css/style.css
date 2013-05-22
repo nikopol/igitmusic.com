@@ -106,9 +106,6 @@
   .section#tour{
       color:#fff;
       background:#000000;
-      /*background-image:url('../img/cover.png');
-      background-repeat:no-repeat;
-      background-size:cover;*/
   }
 
   .section#music{
@@ -128,6 +125,7 @@
 
   .section#pros h1 {
       color:#000;
+      text-shadow:none;
   }
 
   .section#pros a:link {
@@ -138,20 +136,27 @@
   }
 
   #pros-left {
-      width:50%;
+      width:300px;
+      margin-left:80px;
+      padding-right:30px;
+      /* margin-left: auto;
+      margin-right:auto; */
       float:left;
   }
 
   #pros-right {
       float:left;
-      width:50%;
+      /*border-left:1px solid #333; */
+      width:270px;
+      padding-left:29px;
+      margin-left:100px;
   }
 
   .sectionContent{
       width:800px;
+      padding-right:30px;
       margin-left: auto;
       margin-right:auto;
-
   }
 
   .section#home .sectionContent, .section#video .sectionContent{
