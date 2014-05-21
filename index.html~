@@ -3,7 +3,7 @@
 <meta charset="UTF-8"/>
 <title>IGIT - site officiel - Like Angels Do</title>
 <meta name="description" content="Le site officiel du groupe Igit | Découvrez leur premier EP, sortie en mai 2013"/>
-<meta name="keywords" content="Igit, Antoine, Hugo, Paulo, musique, blues, indie, alternatif, the voice, tf1, bleu citron"/>
+<meta name="keywords" content="Igit, Antoine, Hugo, Paulo, musique, blues, indie, alternatif, the voice, tf1"/>
 <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
@@ -105,7 +105,7 @@
         <div id="pros-left">
         <h2>Contacts</h2>
         <ul>
-          <li>Booking concerts: <a href="mailto:samuel@bleucitron.net">Bleu Citron</a>
+          <li>Management: <a href="mailto:florent@kalimaproductions.org">Florent Bony</a>
           <li>Musiciens:  <a href="mailto:igitcontact@gmail.com">igitcontact@gmail.com</a>
         </ul>
         <h2>Technique</h2>
