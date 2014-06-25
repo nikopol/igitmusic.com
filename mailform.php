@@ -26,10 +26,8 @@ function send_file($f,$inline=false){
 	header('Content-Type: '.mime_content_type($f));
 	if($inline){
 		header('Content-Disposition: inline; filename='.basename($f));
-		cache();
 	} else {
 		header('Content-Disposition: attachment; filename='.basename($f));
-		nocache();
 	}
 	readfile($f);
 }
